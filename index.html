@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lawyer Website</title>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+  </head>
+  <style>
+    
+    nav ul {
+      list-style: none;
+      font-size: 16px;
+      margin: 0;
+      padding: 10px;
+      background-color: #000000;
+      text-align: center;
+    }
+
+    nav li {
+      display: inline-block;
+    }
+
+    nav li a {
+      display: block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+  
+    body{
+    
+	font-family: "Georgia";
+    font-size: 12px;
+}
+a{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+i{
+	height: 25px;
+	width: 20px;
+	color: white;
+} 
+   p{
+	  display: inline;
+  }
+#s{
+    text-align: center;
+    font-style: italic;
+}
+ 
+ form{margin-top: 25px;}
+
+::placeholder {
+        
+        color: white;
+    }
+#search {
+  border-radius: 10px;
+  background: #3bafbe;
+  padding: 10px;
+  width: 70px;
+  height: 35px;
+  text-decoration: none;
+  font-family: Georgia;
+  font-size: 12px;
+  color: white;
+  float: right;
+  margin-left: 3px;
+  border: 0;
+}
+  input{		
+	    border-radius: 10px;
+            background: #333333;
+            padding: 10px;
+            width: 200px;
+            height: 12px;
+            text-decoration: none;
+			font-family: Georgia;
+			font-size: 12px;
+            color: rgb(0, 0, 0);
+            float: right;
+			 
+}
+  </style>
+<body>
+    <h1 id="s"><b>Law Firm Website</b></h1>
+    
+    <form id="f">
+        <input type="submit" value="SEARCH"  id="search"/>
+        <input type="text" name="g" size="12" placeholder="Search Our Website..." />
+        
+    </form>
+     
+    <div class="content-space">
+    </div>
+    <hr>
+    <p>
+        <br>
+     
+  <nav>
+    <ul>
+        <b>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="quiz.html">Kuizi</a></li>
+      <li><a href="signup.html" id="albion">Sign Up</a></li>
+      <li><a href="contact.html" id="art">Contact Us</a></li>
+    </b>
+    </ul>
+  </nav>
+  <br>
+  <div id="slideshow-container">
+    <img src="images/LawFirm1.png" >
+    <img src="/images/laefirm.jpg" >
+    <img src="/images/LawFirm2.webp"> 
+  </div>
+  <hr id="k">
+  <section id="n">
+    <table border="0">
+        <thead>
+        <tr> <br>
+            <th>CONTACT DETAILS</th>
+            <th>QUICK LINKS</th>
+            <th>OUR MISSION</th>
+            <th>WRITE US IF U NEED A LAWYER</th>
+        </tr> </thead>
+
+        <tbody>
+        <tr>
+            <td>
+                <p>For more infomation <br>
+                    wether suggesions or compaints, <br>
+                    contact us at:<br>
+
+                    <em>Phone:</em> <a href="tel:+14258828080" id="a1">+1 (425) 882-8080</a><br/>
+                    <em>Email:</em> <a href="mailto:Projekti@gmail.com" id="a1">LawFirm@gmail.com</a>
+                </p></td>
+            <td><a href="#" class="a1">Projekti</a>
+            <hr align="left" width="70%">
+                <br> <a href="#" class="a1">
+                    Rasti</a><hr align="left" width="70%">
+                <br> <a href="#" class="a1">
+                    Rasti1</a><hr align="left" width="70%">
+                <br> <a href="#" class="a1">
+                    Rasti2</a><hr align="left" width="70%">
+            </td>
+
+            <td>Our mission is to provide<br>
+                life-long professional services<br>
+                to support all people
+                who<br> want to know more about <br>
+                law and their rights.
+                </br></td>
+            <td>
+                <form>
+                    <p id="p2">
+                        <input type="text" name="name" placeholder="Name" id="f"/> <br>
+                        <input type="text" name="Email" placeholder="Email" id="f"/>  <br>
+                        <br>
+                        <input id ="ss" type="SUBMIT" name="SUBMIT"  /></p>
+                </form>
+
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+<hr>
+<footer> Copyright &copy 2024 - All Rights Reserved</footer>
+</section>    
+  
+</body>
+<script>
+var images = document.querySelectorAll('#slideshow-container img');
+var currentImageIndex = 0;
+
+function showNextImage() {
+
+  images[currentImageIndex].style.opacity = 0;
+  
+
+  currentImageIndex = (currentImageIndex + 1) % images.length;
+
+  
+  images[currentImageIndex].style.opacity = 1;
+}
+
+
+setInterval(showNextImage, 1500);
+
+</script>
+</html>

@@ -1,0 +1,29 @@
+body{
+    margin: 27%;
+    margin-top: 130px;
+    margin-bottom: 98px;
+    background-image: -webkit-linear-gradient(270deg, black, rgb(127, 228, 244));
+}
+#quiz-container{
+    width: 600px;
+    height: 400px;
+    background-color: lightgrey;
+    border: 3px solid black;
+    padding: 60px;
+    box-shadow: 2px 2px 20px 12px rgb(49, 49, 49);
+}
+/*
+#div-1{
+    border: 1px solid black;
+}
+*/
+button{
+    height: 70px;
+    background-color: rgb(222, 66, 66);
+    border: 6px solid white;
+    border-radius: 50px;
+    padding: 20px;
+    color: black;
+    font-weight: bolder;
+    margin: 70px;
+}

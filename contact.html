@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+  <h1>Contact Us</h1>
+
+  <form id="contact-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+    </div>
+    <button type="submit"  onclick="showAlert()">Submit</button>
+  </form>
+  <script>
+    function showAlert() {
+      alert("Mesazhi juaj eshte derguar me sukses!");
+    }
+  </script>
+</body>
+</html>
